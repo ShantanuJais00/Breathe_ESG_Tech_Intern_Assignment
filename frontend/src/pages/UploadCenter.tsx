@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import api from '../api';
-import { Upload, RefreshCw, X, FileText, CheckCircle2, XCircle, Database, ShieldAlert } from 'lucide-react';
+import { Upload, RefreshCw, X, CheckCircle2, XCircle, Database, ShieldAlert } from 'lucide-react';
 
 export default function UploadCenter() {
   const queryClient = useQueryClient();
