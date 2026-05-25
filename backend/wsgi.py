@@ -15,13 +15,18 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
 
 application = get_wsgi_application()
 
-# --- Temporary Auto-Create Superuser ---
+# --- Temporary Auto-Create Superuser and Tenant ---
 try:
     from django.contrib.auth import get_user_model
     User = get_user_model()
     if not User.objects.filter(is_superuser=True).exists():
         User.objects.create_superuser('admin', 'admin@example.com', 'admin123')
         print("Superuser 'admin' with password 'admin123' created successfully.")
+    
+    from tenants.models import Tenant
+    if not Tenant.objects.exists():
+        Tenant.objects.create(name="Default Tenant")
+        print("Default Tenant created successfully.")
 except Exception as e:
-    print(f"Skipping superuser creation: {e}")
+    print(f"Skipping auto-creation: {e}")
 # ---------------------------------------
