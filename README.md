@@ -116,3 +116,19 @@ The frontend provides a purpose-built operational UI designed specifically for a
    ```bash
    npm run dev
    ```
+## Screenshot
+
+### Dashboard
+
+<img width="1365" height="603" alt="image" src="https://github.com/user-attachments/assets/66f5b17d-f500-4016-b782-44e6b31497a2" />
+
+### Upload Center
+
+<img width="1350" height="663" alt="image" src="https://github.com/user-attachments/assets/9836ac73-1499-4e4e-ba5e-9ffc79318e89" />
+
+### Review Queue
+
+<img width="1353" height="602" alt="image" src="https://github.com/user-attachments/assets/dbb9f831-0112-4256-b5a4-420b03aa1ce7" />
+
+<img width="1364" height="672" alt="image" src="https://github.com/user-attachments/assets/919f9e74-597c-437f-898b-295dc0f577a8" />
+
