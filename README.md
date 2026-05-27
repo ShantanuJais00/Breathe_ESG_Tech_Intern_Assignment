@@ -1,5 +1,10 @@
 # Breathe ESG Data Ingestion Platform
 
+## Live Deployment
+
+- Frontend: https://breathe-esg-tech-intern-assignment.vercel.app/
+- Backend API: https://web-production-746f.up.railway.app/api/
+
 ## Overview
 This is a full-stack platform designed for operational ESG data review and audit workflows built for Breathe ESG. The system uses an audit-first approach to ingest heterogeneous source data, normalize it into a canonical schema while preserving original source provenance, and provide an analyst-centric workflow for validation and audit-locked record approval.
 
@@ -15,6 +20,18 @@ This is a full-stack platform designed for operational ESG data review and audit
 - **Frontend:** React (Vite), TypeScript, Tailwind CSS, React Query
 - **Architecture:** Modular, Domain-Oriented Django Apps (`core`, `tenants`, `imports`, `sap`, `utilities`, `travel`, `records`, `validation`, `reviews`, `audit`)
 
+## Deployment
+
+- Frontend deployed on Vercel
+- Backend API deployed on Railway
+- PostgreSQL hosted on Railway/Postgres
+- Environment-based configuration via `.env`
+
+### Production Notes
+- Prototype deployment intended for evaluation/demo workflows
+- Synchronous ingestion used intentionally for simplicity
+- Static assets served separately from API
+- 
 ## Key Features
 - **Heterogeneous Data Ingestion:** Process operational data natively from varied systems.
 - **Normalization & Provenance:** Normalize incoming data to a canonical schema while strictly maintaining source provenance.
